@@ -1,0 +1,23 @@
+from scrapy.item import Item, Field
+
+class Bet(Item):
+    UUID = Field()
+    record = Field()
+    bookmaker = Field()
+    sport = Field()
+    country = Field()
+    league = Field()
+    eventDate = Field()
+    homeTeam = Field()
+    awayTeam = Field()
+    totals = Field()
+    moneyLine = Field()
+    spreads = Field()
+    home = Field()
+    away = Field()
+    draw = Field()
+    over = Field()
+    under = Field()
+    hdp = Field()
+    points = Field()
+    lastUpdated = Field(serializer=str)
